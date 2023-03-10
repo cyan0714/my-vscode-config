@@ -1,0 +1,380 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.lineNumbers": "relative",
+  "editor.lineHeight": 22,
+  "editor.fontFamily": "Fira Code, monospace",
+  "editor.suggestSelection": "first",
+  "editor.hover.delay": 1000,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontSize": 13,
+
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.enable": false,
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue"],
+
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSameLine": true,
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": false,
+
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.profiles.windows": {
+    "Git-Bash": {
+      "path": "E:\\Git\\Git\\bin",
+      "args": ["-l"]
+    }
+  },
+
+  "debug.javascript.autoAttachFilter": "smart",
+  "debug.allowBreakpointsEverywhere": true,
+
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  // normal mode
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    // 删除两个空格之间的字符串
+    {
+      "before": ["<leader>", "s"],
+      "after": ["B", "d", "E", "a"]
+    },
+    // 从当前光标所在字符复制到当前行最后一个字符
+    {
+      "before": ["<leader>", "y"],
+      "after": ["B", "y", "E", ]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": ["/", "f","r","o","m","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "a"],
+      "after": ["/", "n","a","m","e","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["/", "d","a","t","a","\\","(","\\",")","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "c"],
+      "after": ["/", "c","o","m","p","o","n","e","n","t","s",":","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": ["/", "p","r","o","p","s","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["/", "c","o","m","p","u","t","e","d","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "w"],
+      "after": ["/", "w","a","t","c","h","<Enter>","z","z"],
+    },
+    {
+      "before": ["<leader>", "r"],
+      "after": ["/", "c","r","e","a","t","e","d","<Enter>","z","z"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "after": ["/", "m","o","u","n","t","e","d","<Enter>","z","z"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "after": ["/", "m","e","t","h","o","d","s","<Enter>","z","z"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["/", "s","c","s","s","<Enter>","z","z"]
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // 跳到 data 位置并自动补上复制的值（快速生成对应的 data)
+    {
+      "before": ["q"],
+      "after": ["y","i","w","/","d","a","t","a","\\","(","\\",")","<Enter>","z","z","j","o","<C-v>",":","<leader>",",","<Esc>","i"],
+    },
+    // 快速生成对应的 methods
+    {
+      "before": [";"],
+      "after": ["y","i","w","/","m","e","t","h","o","d","s","(",")","<Enter>","z","z","o","<C-v>","(",")","<leader>","{","}",",","<Esc>","h","i","<Enter>"],
+    },
+    // 跳转到对应的 css 类名(类名最后一个单词的右边是空格)
+    {
+      "before": ["<leader>","j"],
+      "after": ["v", "t", "<leader>", "y", "/", "<C-r>", "\"", "<Enter>"]
+    },
+    // 跳转到对应的 css 类名(类名最后一个单词的右边是双引号)
+    {
+      "before": ["<leader>","k"],
+      "after": ["v", "t", "\"", "y", "/", "<C-r>", "\"", "<Enter>"]
+    },
+    {
+      "before": ["w"],
+      "after": ["w", "w"]
+    },
+    {
+      "before": ["b"],
+      "after": ["b", "b"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["u"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["m"],
+      "after": ["h", "$", "V", "%"]
+    },
+    {
+      "before": ["n"],
+      "after": ["*"]
+    },
+    {
+      "before": [","],
+      "after": ["}", "z", "z"]
+    },
+    {
+      "before": ["'"],
+      "after": ["{", "z", "z"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "after": ["=", "="]
+    },
+    {
+      "before": ["s"],
+      "after": ["<Esc>", "<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["p", "p"],
+      "after": ["p"]
+    },
+    {
+      "before": ["p", "\""],
+      "after": ["p", "l", "d", "t", "\""]
+    },
+    {
+      "before": ["p", "'"],
+      "after": ["p", "l", "d", "t", "'"]
+    },
+  ],
+  // insert mode
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-q>"],
+      "after": ["<Enter>"]
+    },
+    {
+      "before": ["<C-i>"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>", "l", "a", ","]
+    },
+    {
+      "before": ["j", "n"],
+      "after": ["<Esc>", "o"]
+    },
+    {
+      "before": ["j", "o"],
+      "after": ["<Esc>", "A", ";", "<Esc>", "o"]
+    },
+    {
+      "before": ["j", "r"],
+      "after": ["<Esc>", "A", ",", "<Esc>", "o"]
+    },
+    {
+      "before": ["p", "i"],
+      "after": ["<Esc>", "p", "p"]
+    },
+    {
+      "before": ["j", "l"],
+      "after": ["right"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<Esc>", "d", "d"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<Esc>", "A"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["<Esc>", "I"]
+    },
+  ],
+  // visual mode
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["w"],
+      "after": ["i", "w"]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["\"", "0", "p"]
+    },
+    {
+      "before": ["z"],
+      "after": ["y", "/", "<C-r>", "\"", "<Enter>"]
+    },
+    {
+      "before": ["y"],
+      "after": ["y", "%"]
+    }
+    // {
+    //   "before": ["y"],
+    //   "after": ["y", "$", "%"]
+    // }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["w"],
+      "after": ["i", "w"]
+    },
+    {
+      "before": ["b"],
+      "after": ["i", "b"]
+    },
+    {
+      "before": ["B"],
+      "after": ["i", "B"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-z>": false,
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-y>": false,
+    "<C-u>": false,
+  },
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\im-select.exe {im}",
+  "vim.autoSwitchInputMethod.defaultIM": "\"1033\"",
+
+  "search.exclude": {
+    "**/node_modules": false,
+    "**/bower_components": true
+  },
+  "npm.keybindingsChangedWarningShown": true,
+  "remote.SSH.remotePlatform": {
+    "119.23.214.219": "linux"
+  },
+  "git.enableSmartCommit": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "js/ts.implicitProjectConfig.checkJs": false,
+  "htmltagwrap.tag": "div",
+  "sync.gist": "57dfa646e88b46f96328cd893936a618",
+  "files.exclude": {
+    "**/.git": false
+  },
+  // WeChat Mini Program Config
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html",
+    "javascript": "javascriptreact"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "minapp-vscode.disableDecorate": true,
+  "minapp-vscode.cssExtname": "sass",
+}
