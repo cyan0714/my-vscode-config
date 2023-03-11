@@ -1,0 +1,23 @@
+{
+  "el-message-error": {
+    "prefix": "eme",
+    "body": [
+      "this.$$message.error('错了哦，这是一条错误消息')"
+    ],
+    "description": ""
+  },
+  "el-message-warning": {
+    "prefix": "emw",
+    "body": [
+      "this.$$message.warning('警告哦，这是一条警告消息')"
+    ],
+    "description": ""
+  },
+  "el-message-success": {
+    "prefix": "ems",
+    "body": [
+      "this.$$message.success('操作成功！')"
+    ],
+    "description": ""
+  }
+}

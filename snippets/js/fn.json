@@ -1,0 +1,11 @@
+{
+  "generate enhanced function": {
+    "prefix": "fn",
+    "body": [
+      "$1($2) {",
+      "  $3",
+      "},"
+    ],
+    "description": "generate enhanced function"
+  }
+}

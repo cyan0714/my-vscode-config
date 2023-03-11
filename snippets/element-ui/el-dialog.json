@@ -1,0 +1,20 @@
+{
+  "el-dialog": {
+    "prefix": "ed",
+    "body": [
+      "<el-dialog",
+      "  title=\"提示\"",
+      "  width=\"30%\"",
+      "  destroy-on-close",
+      "  append-to-body",
+      "  :visible.sync=\"dialogVisible\">",
+      "  <span>这是一段信息</span>",
+      "  <span slot=\"footer\" class=\"dialog-footer\">",
+      "    <el-button @click=\"dialogVisible = false\">取 消</el-button>",
+      "    <el-button type=\"primary\" @click=\"dialogVisible = false\">确 定</el-button>",
+      "  </span>",
+      "</el-dialog>"
+    ],
+    "description": ""
+  }
+}

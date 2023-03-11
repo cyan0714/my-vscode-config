@@ -1,0 +1,9 @@
+{
+  "Print to console": {
+    "prefix": "cls",
+    "body": [
+      "console.log(JSON.parse(JSON.stringify($1)))"
+    ],
+    "description": "Log output to JSON console"
+  }
+}

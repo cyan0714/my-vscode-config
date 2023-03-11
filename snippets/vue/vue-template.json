@@ -1,0 +1,32 @@
+{
+  "Print to console": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "  <div class=\"$1\"></div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  components: {},",
+      "  data() {",
+      "    return {}",
+      "  },",
+      "  props: {},",
+      "  computed: {},",
+      "  created() {},",
+      "  mounted() {},",
+      "  methods: {}",
+      "}",
+      "</script>",
+      "",
+      "<style scoped lang=\"scss\">",
+      ".$1 {",
+      "",
+      "}",
+      "</style>",
+      ""
+    ],
+    "description": "a vue options template"
+  }
+}

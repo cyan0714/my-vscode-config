@@ -1,0 +1,9 @@
+{
+  "el-radio": {
+    "prefix": "er",
+    "body": [
+      "<el-radio v-model=\"radio\" label=\"1\">备选项</el-radio>"
+    ],
+    "description": ""
+  }
+}

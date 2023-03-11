@@ -1,0 +1,9 @@
+{
+  "bind img dynamic": {
+    "prefix": "isrc",
+    "body": [
+      "<img :src=\"require(`@/imgs/${$1}`)\" alt=\"\">"
+    ],
+    "description": "bind img dynamic"
+  }
+}

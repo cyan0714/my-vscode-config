@@ -1,0 +1,20 @@
+{
+  "el-confirm": {
+    "prefix": "ec",
+    "body": [
+      "const operation = '删除'",
+      "this.$$confirm(`是否确认${ operation }?`, '提示', {",
+      "  confirmButtonText: '确定',",
+      "  cancelButtonText: '取消',",
+      "  type: 'warning'",
+      "}).then(() => {",
+      "  this.$$message({",
+      "    type: 'success',",
+      "    message: `${ operation }成功!`",
+      "  });",
+      "}).catch(() => {",
+      "});"
+    ],
+    "description": ""
+  }
+}

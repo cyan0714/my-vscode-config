@@ -1,0 +1,13 @@
+{
+  "el-validate": {
+    "prefix": "vali",
+    "body": [
+      "this.$refs[formName].validate((valid) => {",
+      "  if (valid) {",
+      "    $1 ",
+      "  }",
+      "})           "
+    ],
+    "description": "el-validate"
+  }
+}

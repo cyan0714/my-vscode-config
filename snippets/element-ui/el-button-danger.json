@@ -1,0 +1,9 @@
+{
+  "el-button-danger": {
+    "prefix": "ebd",
+    "body": [
+      "<el-button type=\"danger\">$1</el-button>"
+    ],
+    "description": ""
+  }
+}

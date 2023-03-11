@@ -1,0 +1,9 @@
+{
+	"Print to console": {
+		"prefix": "api",
+		"body": [
+			"import {$1} from '@/api/$2';"
+		],
+		"description": "import api function"
+	}
+}

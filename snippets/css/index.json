@@ -1,0 +1,96 @@
+{
+	"single-row-ellipsis": {
+    "prefix": "sre",
+    "body": [
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "white-space: nowrap;"
+    ],
+    "description": ""
+  },
+
+  "double-row-ellipsis": {
+    "prefix": "dre",
+    "body": [
+      "display: -webkit-box;",
+      "word-break: break-all;",
+      "-webkit-box-orient: vertical;",
+      "-webkit-line-clamp: 2;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;"
+    ],
+    "description": ""
+  },
+
+  "flex-xy-center": {
+    "prefix": "fxy",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;"
+    ],
+    "description": ""
+  },
+
+  "flex-x-center": {
+    "prefix": "fx",
+    "body": [
+      "display: flex;",
+      "justify-content: center;"
+    ],
+    "description": ""
+  },
+
+  "flex-y-center": {
+    "prefix": "fy",
+    "body": [
+      "display: flex;",
+      "align-items: center;"
+    ],
+    "description": ""
+  },
+
+  "flex-between": {
+    "prefix": "fb",
+    "body": [
+      "display: flex;",
+      "justify-content: space-between;",
+      "align-items: center;"
+    ],
+    "description": ""
+  },
+
+  "flex": {
+    "prefix": "fl",
+    "body": [
+      "display: flex;"
+    ],
+    "description": ""
+  },
+
+  "absolute00": {
+    "prefix": "a00",
+    "body": [
+      "position: absolute;",
+      "top: 0;",
+      "left: 0;"
+    ]
+  },
+
+  "hide-scrollbar": {
+    "prefix": "hs",
+    "body": [
+      "&::-webkit-scrollbar: {",
+        "display: none",
+      "}"
+    ]
+  },
+
+  "shadow": {
+    "prefix": "shadow",
+    "body": [
+      "box-shadow: 0 3px 6px rgba(140,149,159,0.15);"
+    ],
+    "description": "shadow of github"
+  }
+}

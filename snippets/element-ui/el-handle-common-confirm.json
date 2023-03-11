@@ -1,0 +1,27 @@
+{
+  "handleCommonConfirm": {
+    "prefix": "handleCommonConfirm",
+    "body": [
+      "handleCommonConfirm(operation, api, id) {",
+      "  this.$confirm(`是否确认${ operation || '' }?`, '提示', {",
+      "    confirmButtonText: '确定',",
+      "    cancelButtonText: '取消',",
+      "    type: 'warning'",
+      "  }).then(() => {",
+      "    api(id).then(res => {",
+      "      if (res.data.code === 200) {",
+      "        this.$message({",
+      "          type: 'success',",
+      "          message: `${operation || '操作'}成功!`",
+      "        });",
+      "        this.refreshChange()",
+      "      }",
+      "    })",
+      "  }).catch(() => {",
+      "  });",
+      "},",
+      "        "
+    ],
+    "description": "handleCommonConfirm"
+  }
+}

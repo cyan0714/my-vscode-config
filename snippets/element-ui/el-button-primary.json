@@ -1,0 +1,9 @@
+{
+  "el-button-primary": {
+    "prefix": "ebp",
+    "body": [
+      "<el-button type=\"primary\">$1</el-button>"
+    ],
+    "description": ""
+  }
+}
