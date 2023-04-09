@@ -97,24 +97,20 @@
     // 删除两个空格之间的字符串
     {
       "before": ["<leader>", "s"],
-      "after": ["B", "d", "E", "a"]
+      "after": ["B", "d", "E"]
     },
-    // 从当前光标所在字符复制到当前行最后一个字符
+    // 复制两个空格之间的字符串
     {
       "before": ["<leader>", "y"],
-      "after": ["B", "y", "E", ]
+      "after": ["B", "y", "E"]
     },
     {
       "before": ["<leader>", "i"],
       "after": ["/", "f","r","o","m","<Enter>","z","z"],
     },
     {
-      "before": ["<leader>", "a"],
-      "after": ["/", "n","a","m","e","<Enter>","z","z"],
-    },
-    {
       "before": ["<leader>", "d"],
-      "after": ["/", "d","a","t","a","\\","(","\\",")","<Enter>","z","z"],
+      "after": ["/", "d","a","t","a","\\","(","\\",")", "<leader>", "{", "<Enter>","z","z"],
     },
     {
       "before": ["<leader>", "c"],
@@ -203,10 +199,6 @@
       "after": ["{", "z", "z"]
     },
     {
-      "before": ["<leader>", "f"],
-      "after": ["=", "="]
-    },
-    {
       "before": ["s"],
       "after": ["<Esc>", "<leader>", "<leader>", "s"]
     },
@@ -214,10 +206,12 @@
       "before": ["p", "p"],
       "after": ["p"]
     },
+    // 将双引号里的内容删除, 并粘贴复制的值
     {
       "before": ["p", "\""],
       "after": ["p", "l", "d", "t", "\""]
     },
+    // 将单引号里的内容删除, 并粘贴复制的值
     {
       "before": ["p", "'"],
       "after": ["p", "l", "d", "t", "'"]
@@ -290,22 +284,6 @@
     },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["p"],
-      "after": ["\"", "0", "p"]
-    },
-    {
-      "before": ["z"],
-      "after": ["y", "/", "<C-r>", "\"", "<Enter>"]
-    },
-    {
-      "before": ["y"],
-      "after": ["y", "%"]
-    }
-    // {
-    //   "before": ["y"],
-    //   "after": ["y", "$", "%"]
-    // }
   ],
   "vim.operatorPendingModeKeyBindings": [
     {
