@@ -1,0 +1,7 @@
+{
+  "Import Component": {
+    "prefix": "cpn",
+    "body": ["import $1 from '@/component/$1';"],
+    "description": "import component"
+  }
+}
