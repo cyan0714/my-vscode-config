@@ -1,0 +1,25 @@
+{
+  "avue-radio": {
+    "prefix": "avue-radio",
+    "body": [
+      "{",
+      "  label: \"是否当月销售当月开票\",",
+      "  prop: \"currentSaleInvoice\",",
+      "  type: \"radio\",",
+      "  dicData: [",
+      "    {",
+      "      label: \"是\",",
+      "      value: 0,",
+      "    },",
+      "    {",
+      "      label: \"否\",",
+      "      value: 1,",
+      "    },",
+      "  ],",
+      "  width: 150,",
+      "  cell: true,",
+      "},"
+    ],
+    "description": "avue-radio"
+  }
+}
