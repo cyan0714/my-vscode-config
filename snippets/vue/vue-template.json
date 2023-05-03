@@ -3,7 +3,7 @@
     "prefix": "vue",
     "body": [
       "<template>",
-      "  <div class=\"$1\"></div>",
+      "  <div class=\"$TM_FILENAME_BASE\"></div>",
       "</template>",
       "",
       "<script>",
@@ -21,7 +21,7 @@
       "</script>",
       "",
       "<style scoped lang=\"scss\">",
-      ".$1 {",
+      ".$TM_FILENAME_BASE {",
       "",
       "}",
       "</style>",
